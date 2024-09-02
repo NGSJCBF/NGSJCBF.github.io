@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #c14f00;
+  background: #03db2b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2792,11 +2792,4 @@ ul.breadcrumb li + li:last-child {
 }
 #links span.focus-links:hover {
   background-color: #318024;
-}
-.post {
-  margin-top: 60px;
-  padding: 20px;
-  margin-bottom: 60px;
-  -webkit-box-shadow: 0 0 5px #788072;
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
