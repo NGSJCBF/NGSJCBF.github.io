@@ -1,0 +1,22 @@
+locale = "en"
+label = "English"
+weight = 1
+title = "Trying to be better"
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "NG's blog — notes and thoughts."
+
+[params.author]
+  name = "NG"
+  email = "ashley@linux.do"
+  image = "img/avatar.jpg"
+  headline = "hello~"
+  bio = ""
+  links = [
+    { github = "https://github.com/ngsjcbf" },
+    { email = "ashley@linux.do" },
+  ]
