@@ -1592,7 +1592,4 @@ bt 老师那句：
 
 以后大概真的不会再有了。
 
-<p style="text-align:center; font-size:0.9em; color:#777; margin-top:2em;">
-🗡️ 🎓 🔥 🎓 ✨<br>
-<strong>Graduation Achieved</strong>
-</p>
+{{< graduation-achieved >}}

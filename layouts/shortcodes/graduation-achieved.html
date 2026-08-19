@@ -1,0 +1,39 @@
+{{- /* Graduation Achieved 成就动画 shortcode */ -}}
+{{- $id := printf "graduation-achieved-%d" .Ordinal -}}
+{{- if not (.Page.Store.Get "graduation-achieved-assets") -}}
+{{- .Page.Store.Set "graduation-achieved-assets" true -}}
+{{- $css := resources.Get "css/graduation-achieved.css" | resources.Minify | resources.Fingerprint "sha512" -}}
+{{- $js := resources.Get "js/graduation-achieved.js" | resources.Minify | resources.Fingerprint "sha512" -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- end -}}
+
+<div id="{{ $id }}" class="grad-achieve" data-grad-achieve aria-label="Graduation Achieved">
+  <div class="ga-title">
+    <span class="ga-title-small">ACHIEVEMENT UNLOCKED</span>
+    <span class="ga-title-main">Graduation Achieved</span>
+  </div>
+
+  <div class="ga-stage">
+    <div class="ga-ring-wrap">
+      <svg class="ga-ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="ga-ring-bg" cx="60" cy="60" r="48"></circle>
+        <circle class="ga-ring-progress" cx="60" cy="60" r="48"></circle>
+      </svg>
+      <div class="ga-ring-core"></div>
+    </div>
+
+    <div class="ga-hat-stage">
+      <div class="ga-trail"><span class="ga-trail-core"></span></div>
+      <div class="ga-impact"></div>
+      <div class="ga-hat ga-hat-bachelor" aria-label="Bachelor">🎓</div>
+      <div class="ga-hat ga-hat-master" aria-label="Master">🎓</div>
+    </div>
+
+    <div class="ga-particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div class="ga-subtitle">BACHELOR → MASTER</div>
+</div>
