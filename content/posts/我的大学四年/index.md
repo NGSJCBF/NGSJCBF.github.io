@@ -895,27 +895,123 @@ hhhhhhhh。
 
 ------
 
-大三大四的时候，对我影响比较大的老师，大概就是我的辅导员李老师。
+至于大学里对我影响比较大的老师，其实还有一位bt老师。
 
-他一直很尽心尽力。
+他给我的影响有点特殊。
 
-会教我们怎么走向职场。
+因为很多东西，我当时其实没有完全意识到。
 
-怎么做人生规划。
+他讲的一些思考方式、做事情的方法，还有当时给我们的帮助和指导，现在回头看，甚至有一点超前。
 
-怎么面对大学毕业以后真正的生活。
+大一大二的时候听这些东西，我可能只是觉得：
 
-以前听这些话的时候，有时候也没什么感觉。
+“哦，好像有点道理。”
 
-总觉得：
+甚至有些时候压根没有真正放在心上。
 
-还早。
+等到了大三大四，开始自己做项目、准备考研、考虑以后到底要去哪里、要做什么的时候，我才慢慢发现：
 
-以后再说。
+**卧槽，他好像很早以前就在提醒我们这些事情了。**
 
-到了毕业才发现。
+怎么思考一个问题。
 
-那些以前觉得特别遥远的东西，其实一下子就会走到你面前。
+怎么避免只盯着眼前的答案。
+
+怎么养成好的思维习惯。
+
+怎么真正对自己正在做的事情负责。
+
+很多话当时听起来只是老师随口说说，几年以后却会突然从脑子里冒出来。
+
+然后你才意识到：
+
+原来当时不是没有听懂。
+
+只是那个时候的自己，还没有走到能够真正理解这些话的位置。
+
+------
+
+我还被他骂过一句：
+
+**“你太菜了吧。”**
+
+hhhhhh。
+
+如果换成以前的我，可能会因为这种话怀疑自己很久。
+
+觉得是不是老师看不起我。
+
+是不是我真的特别笨。
+
+但很奇怪，我并没有因此特别讨厌他。
+
+反而一直记着这句话。
+
+因为现在回头看，我觉得它更像一次警醒。
+
+菜就是菜。
+
+不会就是不会。
+
+有问题就去补。
+
+与其花时间想：
+
+“别人是不是觉得我很差？”
+
+不如问：
+
+“那我到底还差在哪里？”
+
+这句话后来慢慢变成了另外一种提醒：
+
+**你得开始为自己负责了。**
+
+老师可以提醒你。
+
+同学可以帮你。
+
+父母可以替你操心。
+
+但是没有人能够替你把未来活完。
+
+学不会的东西，最后还是得自己学。
+
+做不好的事情，最后还是得自己改。
+
+不知道以后要干什么，也不能永远等着别人给答案。
+
+所以后来每当我觉得自己又在摆烂、拖延、逃避的时候，我偶尔还是会想起那句：
+
+“你太菜了吧。”
+
+多少有点扎心。
+
+但也挺有用。
+
+它没有让我觉得自己注定很菜。
+
+反而会让我觉得：
+
+**那就练呗。**
+
+大学好像就是这样。
+
+有些老师当时讲的话，你出了教室就忘了。
+
+有些老师讲的话，你当时不理解，却会在几年以后突然听懂。
+
+bt老师大概就是后者。
+
+现在回头看，我很感谢他当时愿意点我们这些东西。
+
+也越来越觉得，一个真正好的老师，不一定只是教会你某一门课程。
+
+有时候他只是很早很早地告诉你：
+
+**以后没有人替你负责了。**
+
+而你过了几年，才终于开始明白这句话是什么意思。
 
 ------
 
@@ -1579,12 +1675,21 @@ Linux。
 以后大概真的不会再有了。
 
 <div class="grad-achieve" id="grad-achieve">
-  <div class="grad-achieve__badge">
-    <svg class="grad-achieve__ring" viewBox="0 0 120 120" aria-hidden="true">
-      <circle class="grad-achieve__track" cx="60" cy="60" r="54"></circle>
-      <circle class="grad-achieve__arc" cx="60" cy="60" r="54"></circle>
-    </svg>
-    <span class="grad-achieve__icon">🎓</span>
+  <div class="grad-achieve__visual">
+    <div class="grad-achieve__badge">
+      <svg class="grad-achieve__ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="grad-achieve__track" cx="60" cy="60" r="54"></circle>
+        <circle class="grad-achieve__arc" cx="60" cy="60" r="54"></circle>
+      </svg>
+      <span class="grad-scene" aria-hidden="true">
+        <span class="grad-scene__sword">🗡️</span>
+        <span class="grad-scene__cap grad-scene__cap--bsc">🎓</span>
+        <span class="grad-scene__flame">🔥</span>
+        <span class="grad-scene__cap grad-scene__cap--msc">🎓</span>
+        <span class="grad-scene__spark">✨</span>
+      </span>
+    </div>
+    <div class="grad-trail" aria-hidden="true"></div>
   </div>
   <div class="grad-achieve__text">graduation Achieved</div>
 </div>
