@@ -113,7 +113,7 @@
 
 /* .ga-play is applied once by JavaScript after the component enters view. */
 .grad-achieve.ga-play .ga-star {
-  animation: ga-star-gather var(--ga-duration) cubic-bezier(.22, .72, .22, 1) var(--ga-delay) forwards;
+  animation: ga-star-gather var(--ga-duration) cubic-bezier(.22, .72, .22, 1) var(--ga-delay) both;
 }
 
 .grad-achieve.ga-play .ga-constellation {
