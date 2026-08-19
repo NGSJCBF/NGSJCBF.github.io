@@ -12,9 +12,10 @@
       }
 
       element.dataset.gaInitialized = 'true';
+      element.classList.add('ga-ready');
 
       if (!('IntersectionObserver' in window)) {
-        element.classList.add('ga-play');
+        element.classList.add('ga-static');
         return;
       }
 
