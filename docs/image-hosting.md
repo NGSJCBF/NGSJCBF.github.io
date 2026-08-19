@@ -33,7 +33,7 @@ content/posts/my-post/
 - 不经过第三方 CDN，国内访问稳定。
 - 注意：图片会进 Git 仓库，建议单图 < 100MB、仓库总量别太大。
 
-> 参考示例：`content/posts/using-images/`（含封面图 + 正文图）。
+> 参考示例：`content/posts/我的大学四年/`（含封面图 `featured.png` 与正文图片 `img/`）。
 
 ---
 

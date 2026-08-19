@@ -1,13 +1,11 @@
 ---
-title: "我的文章"
+title: "我的大学四年：人生中一场漫长的暑假"
 date: 2026-08-19T09:46:33+08:00
-draft: true
-description: ""
-tags: []
-categories: []
+draft: false
+description: "大学四年的回忆、遗憾与告别。"
+tags: ["大学", "毕业", "回忆", "随笔"]
+categories: ["随笔"]
 ---
-
-# 我的大学四年：人生中一场漫长的暑假
 
 2026年6月8号，我拍了毕业照。
 
@@ -28,6 +26,11 @@ categories: []
 再往前走一点。
 
 再给自己的人生，添加几分恣意。
+
+<p align="center">
+  <img src="img/来来，跟你说个事.png" alt="来来，跟你说个事" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>来来，跟你说个事</i></p>
 
 ------
 
@@ -59,11 +62,21 @@ hp、阿伟、席少……
 
 一个新的世界就这么稀里糊涂地打开了。
 
+<p align="center">
+  <img src="img/大一某一天晚霞.jpg" alt="大一某一天的晚霞" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>大一某一天的晚霞</i></p>
+
 刚学计算机的时候，我其实学得很吃力。
 
 现在印象最深刻的一件事，甚至不是某个特别困难的算法，而是：
 
 我一开始居然分不清Python里的`=`和`==`有什么区别。
+
+<p align="center">
+  <img src="img/刚学高数三个月的精神状态belike.jpg" alt="刚学高数三个月的精神状态belike" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>刚学高数三个月的精神状态belike</i></p>
 
 现在当然觉得这件事蠢得有点可爱。
 
@@ -327,6 +340,11 @@ hhhhhhhh。
 
 他真的很严格。
 
+<p align="center">
+  <img src="img/黄老师的压迫感.jpg" alt="黄老师：没收你的学位证" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>黄老师：没收你的学位证</i></p>
+
 严格到不少同学对他的印象都不是特别好。
 
 当时会觉得：
@@ -435,6 +453,11 @@ hhhhhhhh。
 
 考研。
 
+<p align="center">
+  <img src="img/考研初期信心满满.jpg" alt="考研初期信心满满" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>考研初期信心满满</i></p>
+
 如果现在让我评价自己的备考过程，我大概不会美化它。
 
 我备考得其实不算特别好。
@@ -471,6 +494,11 @@ hhhhhhhh。
 
 然后再学一点。
 
+<p align="center">
+  <img src="img/考研初试结束离开考场的时候.jpg" alt="考研初试结束，离开考场的时候，中大好美" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>考研初试结束，离开考场的时候，中大好美</i></p>
+
 hhhhhh。
 
 但也正是在这样一个并不完美的备考过程中，留下了很多我现在特别喜欢的记忆。
@@ -484,6 +512,11 @@ hhhhhh。
 走在校园里。
 
 头顶是一片星空。
+
+<p align="center">
+  <img src="img/备考期间从图书馆出来看到的晚霞.jpg" alt="备考期间从图书馆出来看到的晚霞" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>备考期间从图书馆出来看到的晚霞</i></p>
 
 大家都很累。
 
@@ -535,6 +568,11 @@ hhhhhh。
 
 考研那年的暑假，我没有回家。
 
+<p align="center">
+  <img src="img/家乡的晚霞.jpg" alt="家乡的晚霞" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>家乡的晚霞</i></p>
+
 我爸妈还在家里问：
 
 “你搞鸡毛去了？”
@@ -575,6 +613,17 @@ hhhhhh。
 
 我重新想起以前自己一个人在风暴点里到处跑的日子。
 
+<p align="center">
+  <img src="img/25年CNAPEX冠军FMVP.jpg" alt="欸，怎么一觉醒来CNAPEX就拿冠军了？！我huge呢" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>欸，怎么一觉醒来CNAPEX就拿冠军了？！我huge呢</i></p>
+
+
+
+
+
+
+
 现实里每天是数学、英语、政治、专业课。
 
 一道又一道题。
@@ -589,11 +638,21 @@ hhhhhh。
 
 APEX大概就是我那时候的一条缝。
 
+<p align="center">
+  <img src="img/我的steam个人资料-永远喜欢超时空八千代！.jpg" alt="我的steam个人资料-永远喜欢超时空八千代！.jpg" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>我的steam个人资料-永远喜欢超时空八千代！.jpg</i></p>
+
 当然。
 
 钻进去不出来的话。
 
 也是会寄的（。
+
+<p align="center">
+  <img src="img/真的要在这里吗.jpg" alt="真的要在派派继续度日吗！？快去学习！" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>真的要在派派继续度日吗！？快去学习！</i></p>
 
 ------
 
@@ -617,13 +676,18 @@ APEX大概就是我那时候的一条缝。
 
 问：
 
-“哥，这个怎么做？”
+“这个怎么做？”
 
 你嘴上嫌麻烦。
 
 然后开始算。
 
 可能就是这样。
+
+<p align="center">
+  <img src="img/小猫探头.jpg" alt="小猫探头" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>小猫探头</i></p>
 
 ------
 
@@ -965,7 +1029,12 @@ Linux。
 
 那天，我一个人去了西湖。
 
-西湖边挺清冷的。
+<p align="center">
+  <img src="img/西湖边.jpg" alt="杭州，西湖。复试结束以后，一个人坐了很久。" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>杭州，西湖。复试结束以后，一个人坐了很久。</i></p>
+
+春天的西湖边挺清冷的。
 
 没有特别热闹。
 
@@ -1022,6 +1091,11 @@ Linux。
 的时刻。
 
 那种如释重负，我到现在都记得。
+
+<p align="center">
+  <img src="img/某个城市的晚霞.jpg" alt="某个城市的晚霞" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>某个城市的晚霞</i></p>
 
 ------
 
@@ -1185,6 +1259,11 @@ Linux。
 
 然后开始审判自己。
 
+<p align="center">
+  <img src="img/哭了.jpg" alt="当时过IMS的剧情......" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>当时过IMS的剧情......</i></p>
+
 大学四年没有治好这些东西。
 
 甚至可能正是在毕业以后，我才第一次真正开始看清它们。
@@ -1275,6 +1354,11 @@ Linux。
 
 行李开始收拾。
 
+<p align="center">
+  <img src="img/该离开了.jpg" alt="离别的种子早在相遇的那一刻埋下" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>离别的种子早在相遇的那一刻埋下</i></p>
+
 朋友开始离开。
 
 有人说：
@@ -1340,6 +1424,11 @@ Linux。
 还有晚上十点的星空。
 
 以及复试结束后，一片清冷的西湖。
+
+<p align="center">
+  <img src="img/武功山山景.jpg" alt="武功山风景甚好！" width="70%">
+</p>
+<p style="text-align:center; font-size:0.85em; color:#666;"><i>武功山风景甚好！</i></p>
 
 ------
 
