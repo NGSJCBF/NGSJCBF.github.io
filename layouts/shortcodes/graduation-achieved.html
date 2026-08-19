@@ -8,32 +8,39 @@
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 {{- end -}}
 
-<div id="{{ $id }}" class="grad-achieve" data-grad-achieve aria-label="Graduation Achieved">
-  <div class="ga-title">
-    <span class="ga-title-small">ACHIEVEMENT UNLOCKED</span>
-    <span class="ga-title-main">Graduation Achieved</span>
+<div id="{{ $id }}" class="grad-achieve" data-grad-achieve aria-labelledby="{{ $id }}-meta {{ $id }}-final">
+  <div id="{{ $id }}-meta" class="ga-meta">2022 — 2026</div>
+
+  <div class="ga-stage" aria-hidden="true">
+    <div class="ga-sky"></div>
+    <div class="ga-stars">
+      <span class="ga-star" style="--ga-from-x:-132px;--ga-from-y:92px;--ga-to-x:-46px;--ga-to-y:18px;--ga-delay:.72s;--ga-duration:1.58s;--ga-opacity:.72"></span>
+      <span class="ga-star" style="--ga-from-x:118px;--ga-from-y:76px;--ga-to-x:36px;--ga-to-y:-20px;--ga-delay:.86s;--ga-duration:1.46s;--ga-opacity:.8"></span>
+      <span class="ga-star" style="--ga-from-x:-104px;--ga-from-y:-72px;--ga-to-x:-18px;--ga-to-y:-30px;--ga-delay:.98s;--ga-duration:1.62s;--ga-opacity:.6"></span>
+      <span class="ga-star" style="--ga-from-x:136px;--ga-from-y:-58px;--ga-to-x:28px;--ga-to-y:28px;--ga-delay:1.08s;--ga-duration:1.55s;--ga-opacity:.76"></span>
+      <span class="ga-star" style="--ga-from-x:-72px;--ga-from-y:118px;--ga-to-x:-8px;--ga-to-y:8px;--ga-delay:1.16s;--ga-duration:1.48s;--ga-opacity:.9"></span>
+      <span class="ga-star" style="--ga-from-x:84px;--ga-from-y:112px;--ga-to-x:16px;--ga-to-y:10px;--ga-delay:1.24s;--ga-duration:1.52s;--ga-opacity:.66"></span>
+      <span class="ga-star" style="--ga-from-x:-154px;--ga-from-y:-12px;--ga-to-x:-34px;--ga-to-y:2px;--ga-delay:1.3s;--ga-duration:1.45s;--ga-opacity:.74"></span>
+      <span class="ga-star" style="--ga-from-x:152px;--ga-from-y:18px;--ga-to-x:42px;--ga-to-y:8px;--ga-delay:1.38s;--ga-duration:1.5s;--ga-opacity:.58"></span>
+      <span class="ga-star" style="--ga-from-x:-42px;--ga-from-y:-126px;--ga-to-x:-10px;--ga-to-y:-8px;--ga-delay:1.42s;--ga-duration:1.56s;--ga-opacity:.82"></span>
+      <span class="ga-star" style="--ga-from-x:42px;--ga-from-y:-132px;--ga-to-x:12px;--ga-to-y:-18px;--ga-delay:1.5s;--ga-duration:1.5s;--ga-opacity:.68"></span>
+      <span class="ga-star" style="--ga-from-x:-124px;--ga-from-y:42px;--ga-to-x:-26px;--ga-to-y:36px;--ga-delay:1.56s;--ga-duration:1.42s;--ga-opacity:.64"></span>
+      <span class="ga-star" style="--ga-from-x:128px;--ga-from-y:-34px;--ga-to-x:30px;--ga-to-y:-42px;--ga-delay:1.62s;--ga-duration:1.44s;--ga-opacity:.72"></span>
+    </div>
+
+    <svg class="ga-constellation" viewBox="0 0 360 250" focusable="false">
+      <path d="M139 126 L163 108 L185 119 L210 104 L224 128 L198 143 L170 138 Z"></path>
+      <circle cx="139" cy="126" r="2.2"></circle>
+      <circle cx="163" cy="108" r="2.2"></circle>
+      <circle cx="185" cy="119" r="2.2"></circle>
+      <circle cx="210" cy="104" r="2.2"></circle>
+      <circle cx="224" cy="128" r="2.2"></circle>
+      <circle cx="198" cy="143" r="2.2"></circle>
+      <circle cx="170" cy="138" r="2.2"></circle>
+    </svg>
   </div>
 
-  <div class="ga-stage">
-    <div class="ga-ring-wrap">
-      <svg class="ga-ring" viewBox="0 0 120 120" aria-hidden="true">
-        <circle class="ga-ring-bg" cx="60" cy="60" r="48"></circle>
-        <circle class="ga-ring-progress" cx="60" cy="60" r="48"></circle>
-      </svg>
-      <div class="ga-ring-core"></div>
-    </div>
-
-    <div class="ga-hat-stage">
-      <div class="ga-trail"><span class="ga-trail-core"></span></div>
-      <div class="ga-impact"></div>
-      <div class="ga-hat ga-hat-bachelor" aria-label="Bachelor">🎓</div>
-      <div class="ga-hat ga-hat-master" aria-label="Master">🎓</div>
-    </div>
-
-    <div class="ga-particles" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
+  <div class="ga-copy">
+    <p id="{{ $id }}-final" class="ga-final">因为那个暑假，以后大概真的不会再有了。</p>
   </div>
-
-  <div class="ga-subtitle">BACHELOR → MASTER</div>
 </div>
