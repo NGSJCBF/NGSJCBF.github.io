@@ -1,0 +1,344 @@
+<style>
+  .style-board {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .style-board .intro {
+    max-width: 720px;
+    margin: 0 auto 28px;
+    text-align: center;
+  }
+
+  .style-board .intro p {
+    margin-bottom: 0;
+  }
+
+  .style-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .style-card {
+    overflow: hidden;
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    border-radius: 18px;
+    background: rgba(127, 127, 127, 0.07);
+    cursor: pointer;
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  .style-card:hover,
+  .style-card.selected {
+    transform: translateY(-4px);
+    border-color: rgba(116, 178, 255, 0.8);
+    box-shadow: 0 16px 36px rgba(50, 100, 180, 0.16);
+  }
+
+  .style-preview {
+    position: relative;
+    height: 245px;
+    overflow: hidden;
+  }
+
+  .style-preview::after {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .style-film {
+    background: linear-gradient(145deg, #302b2a 0%, #151719 56%, #263747 100%);
+  }
+
+  .style-film::before {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 65% 35%, rgba(247, 190, 119, 0.3), transparent 26%), linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+    content: "";
+  }
+
+  .film-label {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: rgba(255, 235, 203, 0.8);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+  }
+
+  .film-track {
+    position: absolute;
+    top: 112px;
+    right: 25px;
+    left: 25px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255, 201, 139, 0.2), #f4bf85, rgba(137, 194, 232, 0.75));
+  }
+
+  .film-track::before {
+    position: absolute;
+    top: -4px;
+    left: 19%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #f4bf85;
+    border-radius: 50%;
+    background: #292828;
+    box-shadow: 122px 0 0 -2px #292828, 122px 0 0 0 #86bce0;
+    content: "";
+  }
+
+  .film-shot {
+    position: absolute;
+    top: 48px;
+    width: 70px;
+    height: 48px;
+    border: 5px solid rgba(255, 229, 191, 0.74);
+    background: linear-gradient(145deg, rgba(221, 173, 121, 0.8), rgba(65, 81, 95, 0.88));
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    transform: rotate(-5deg);
+  }
+
+  .film-shot::after {
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+    left: 8px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 222, 166, 0.45);
+    content: "";
+  }
+
+  .film-shot.one { left: 17%; }
+  .film-shot.two { left: 54%; top: 128px; transform: rotate(5deg); }
+
+  .film-end {
+    position: absolute;
+    right: 25px;
+    bottom: 42px;
+    color: #ffe3bd;
+    font-family: Georgia, serif;
+    font-size: 17px;
+  }
+
+  .style-film::after { content: "A · gentle rewind"; }
+
+  .style-stars {
+    background: radial-gradient(circle at 50% 44%, #293c5a 0%, #101927 54%, #0c111c 100%);
+  }
+
+  .style-stars .star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #d4e8ff;
+    box-shadow: 0 0 10px #8ec7ff;
+    animation: style-twinkle 2.8s ease-in-out infinite alternate;
+  }
+
+  .style-stars .star:nth-child(1) { top: 22%; left: 17%; }
+  .style-stars .star:nth-child(2) { top: 30%; left: 78%; animation-delay: -0.8s; }
+  .style-stars .star:nth-child(3) { top: 62%; left: 21%; animation-delay: -1.4s; }
+  .style-stars .star:nth-child(4) { top: 73%; left: 72%; animation-delay: -2s; }
+  .style-stars .star:nth-child(5) { top: 18%; left: 52%; animation-delay: -1.1s; }
+
+  .star-core {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(199, 226, 255, 0.68);
+    border-radius: 50%;
+    box-shadow: 0 0 22px rgba(119, 190, 255, 0.42), inset 0 0 18px rgba(119, 190, 255, 0.2);
+    transform: translate(-50%, -50%);
+  }
+
+  .star-core::before,
+  .star-core::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(180, 220, 255, 0.65), transparent);
+    content: "";
+    transform: translate(-50%, -50%) rotate(32deg);
+  }
+
+  .star-core::after { transform: translate(-50%, -50%) rotate(-32deg); }
+
+  .star-caption {
+    position: absolute;
+    right: 0;
+    bottom: 44px;
+    left: 0;
+    color: rgba(224, 239, 255, 0.88);
+    font-family: Georgia, serif;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+
+  .style-stars::after { content: "B · memories become light"; }
+
+  .style-road {
+    background: linear-gradient(180deg, #f7d7a1 0%, #f4b87e 47%, #253a49 48%, #101c27 100%);
+  }
+
+  .style-road::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 53%;
+    background: linear-gradient(158deg, transparent 44%, rgba(255, 236, 178, 0.84) 45%, rgba(255, 236, 178, 0.84) 47%, transparent 48%), linear-gradient(22deg, transparent 48%, rgba(255, 236, 178, 0.46) 49%, transparent 50%);
+    opacity: 0.85;
+    content: "";
+  }
+
+  .road-sun {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #fff4c9;
+    box-shadow: 0 0 0 18px rgba(255, 244, 201, 0.14), 0 0 44px rgba(255, 248, 206, 0.78);
+    transform: translateX(-50%);
+  }
+
+  .road-line {
+    position: absolute;
+    right: 50%;
+    bottom: 32px;
+    width: 2px;
+    height: 146px;
+    background: linear-gradient(#ffe9ad, transparent);
+    transform: rotate(7deg);
+    transform-origin: bottom;
+  }
+
+  .road-dot {
+    position: absolute;
+    right: 38%;
+    bottom: 54px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff3c3;
+    box-shadow: 0 0 12px 3px rgba(255, 236, 157, 0.72);
+  }
+
+  .road-caption {
+    position: absolute;
+    top: 26px;
+    right: 25px;
+    left: 25px;
+    color: #314351;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .style-road::after { content: "C · keep walking"; color: rgba(255, 255, 255, 0.62); }
+
+  .style-copy {
+    padding: 18px 18px 20px;
+  }
+
+  .style-copy h3 {
+    margin: 0 0 7px;
+    font-size: 1rem;
+  }
+
+  .style-copy p {
+    min-height: 52px;
+    margin: 0;
+    color: rgba(127, 127, 127, 0.95);
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .style-tag {
+    display: inline-flex;
+    margin-top: 14px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(116, 178, 255, 0.12);
+    color: #6ea7da;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+  }
+
+  @keyframes style-twinkle {
+    from { opacity: 0.35; transform: scale(0.65); }
+    to { opacity: 1; transform: scale(1.45); }
+  }
+
+  @media (max-width: 850px) {
+    .style-cards { grid-template-columns: 1fr; }
+    .style-preview { height: 210px; }
+  }
+</style>
+
+<div class="style-board">
+  <div class="intro">
+    <h2>结尾动画 · 视觉方向对比</h2>
+    <p class="subtitle">三种都从“成就解锁”改成“大学暂告一段落”。点击最接近你想要的方向，也可以直接告诉我想混合哪两种。</p>
+  </div>
+
+  <div class="style-cards">
+    <div class="style-card" data-choice="A-胶片回望" onclick="toggleSelect(this)">
+      <div class="style-preview style-film">
+        <span class="film-label">2022 — 2026 / ARCHIVE</span>
+        <span class="film-shot one"></span>
+        <span class="film-shot two"></span>
+        <span class="film-track"></span>
+        <span class="film-end">这段夏天，先收好。</span>
+      </div>
+      <div class="style-copy">
+        <h3>A · 胶片回望</h3>
+        <p>时间线把四年里的照片、夜晚和人轻轻收拢，最后停在一句克制的告别。最贴近正文的回望气质。</p>
+        <span class="style-tag">推荐 · 安静而有余韵</span>
+      </div>
+    </div>
+
+    <div class="style-card" data-choice="B-星光汇流" onclick="toggleSelect(this)">
+      <div class="style-preview style-stars">
+        <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+        <span class="star-core"></span>
+        <span class="star-caption">那些日子，仍然在发光</span>
+      </div>
+      <div class="style-copy">
+        <h3>B · 星光汇流</h3>
+        <p>把“看过的星空、一起走过的人”变成缓慢汇聚的光点，情绪更浪漫，也更像一段片尾字幕。</p>
+        <span class="style-tag">浪漫 · 纪念感更强</span>
+      </div>
+    </div>
+
+    <div class="style-card" data-choice="C-向前走" onclick="toggleSelect(this)">
+      <div class="style-preview style-road">
+        <span class="road-sun"></span>
+        <span class="road-line"></span>
+        <span class="road-dot"></span>
+        <span class="road-caption">大学结束，人生继续</span>
+      </div>
+      <div class="style-copy">
+        <h3>C · 向前走</h3>
+        <p>从毕业照的余光切到一条通向远处的路，强调“结束不是终点”。方向最明确，但告别感会更轻。</p>
+        <span class="style-tag">明亮 · 继续生活</span>
+      </div>
+    </div>
+  </div>
+</div>
