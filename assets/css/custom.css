@@ -1,0 +1,127 @@
+/* ===== 结尾成就动画：graduation Achieved ===== */
+.grad-achieve {
+  text-align: center;
+  margin: 3.5rem auto 1.5rem;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+.grad-achieve__badge {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+
+.grad-achieve__ring {
+  width: 100%;
+  height: 100%;
+}
+
+.grad-achieve__track {
+  fill: none;
+  stroke: rgba(120, 120, 120, 0.28);
+  stroke-width: 3;
+}
+
+.grad-achieve__arc {
+  fill: none;
+  stroke: #f0b429;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 339.3;
+  stroke-dashoffset: 339.3;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.grad-achieve__icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+.grad-achieve__text {
+  margin-top: 1.1rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #c98a00;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.dark .grad-achieve__text {
+  color: #f0b429;
+}
+
+/* 进入视口后触发 */
+.grad-achieve.in-view .grad-achieve__arc {
+  animation: gradArc 1.8s cubic-bezier(0.45, 0.05, 0.2, 1) forwards;
+}
+
+.grad-achieve.in-view .grad-achieve__icon {
+  animation: gradPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 1.8s forwards;
+}
+
+.grad-achieve.in-view .grad-achieve__text {
+  animation: gradFadeUp 0.7s ease 2.1s forwards;
+}
+
+@keyframes gradArc {
+  0% {
+    stroke-dashoffset: 339.3;
+    transform: rotate(0deg);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes gradPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes gradFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 尊重系统「减少动效」偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .grad-achieve.in-view .grad-achieve__arc,
+  .grad-achieve.in-view .grad-achieve__icon,
+  .grad-achieve.in-view .grad-achieve__text {
+    animation-duration: 0.01s;
+    animation-delay: 0s;
+  }
+  .grad-achieve__icon,
+  .grad-achieve__text {
+    opacity: 1;
+    transform: none;
+  }
+  .grad-achieve__arc {
+    stroke-dashoffset: 0;
+  }
+}

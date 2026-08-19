@@ -1577,3 +1577,28 @@ Linux。
 因为那个暑假，
 
 以后大概真的不会再有了。
+
+<div class="grad-achieve" id="grad-achieve">
+  <div class="grad-achieve__badge">
+    <svg class="grad-achieve__ring" viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="grad-achieve__track" cx="60" cy="60" r="54"></circle>
+      <circle class="grad-achieve__arc" cx="60" cy="60" r="54"></circle>
+    </svg>
+    <span class="grad-achieve__icon">🎓</span>
+  </div>
+  <div class="grad-achieve__text">graduation Achieved</div>
+</div>
+
+<script>
+(function () {
+  var el = document.getElementById('grad-achieve');
+  if (!el) return;
+  if (!('IntersectionObserver' in window)) { el.classList.add('in-view'); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { el.classList.add('in-view'); io.disconnect(); }
+    });
+  }, { threshold: 0.3 });
+  io.observe(el);
+})();
+</script>
